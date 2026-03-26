@@ -8,138 +8,129 @@ const SITE_CONFIG = {
   name: "Majul Editorial",
   tagline: "Fashion Beyond The Runway · Culture · Context · Commentary",
   footerTagline: "Fashion beyond the runway.",
-  footerDesc: "A digital editorial platform built for visual storytelling, elegant reading, and scalable magazine publishing.",
+  footerDesc: "A digital editorial platform built for visual storytelling, sharp commentary, and magazine-style publishing focused on fashion law, culture, and criticism.",
   instagramUrl: "https://instagram.com",
 };
 
 // ── HERO SECTION ─────────────────────────────────────────────────
-// heroArticleId must match an id in the articles array below.
 const HERO = {
-  eyebrow: "New Editorial Platform",
-  headline: "A polished digital home for <em>fashion,</em> culture, and commentary.",
-  body: "Built for visual storytelling, elegant reading, and scalable magazine publishing. Each story opens into its own article page with a clean preview box and structured layout.",
-  heroArticleId: "fashion-journalism",
-  heroImage: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80",
-  heroBadge: "Issue 01 · Featured",
+  eyebrow: "Lead Story",
+  headline: "Does <em>originality</em> even matter anymore?",
+  body: "This issue leads with a sharp look at nostalgia, revival culture, and the legal fiction of originality in a fashion industry built on recombination, archives, and repetition.",
+  heroArticleId: "does-originality-even-matter",
+  heroImage: "LeadArticleImage.png",
+  heroBadge: "Issue 01 · Lead",
 };
 
 // ── FEATURED ARTICLE (Lead Story) ────────────────────────────────
-// featuredId must match an id in the articles array below.
 const FEATURED = {
-  featuredId: "fashion-journalism",
-  sectionDesc: "A professional homepage flow inspired by modern magazine design: image-forward, spacious, and structured to make discovery feel effortless.",
-  editorNote: "This is a placeholder for an editor's note or pull quote. It adds a secondary layer of context and editorial voice to the featured article layout.",
+  featuredId: "does-originality-even-matter",
+  sectionDesc: "Six essays examine the fault lines where fashion meets law: originality, trademarks, counterfeits, labor, aesthetics, and brand control.",
+  editorNote: "Lead essay: a critique of revival culture and the mismatch between fashion’s recursive creativity and legal doctrines built around novelty.",
 };
 
 // ── ARTICLES ─────────────────────────────────────────────────────
-// Add, remove, or edit articles here each week.
-//
-// Fields:
-//   id        — unique slug, no spaces (used in URLs)
-//   category  — badge label on the card
-//   issue     — e.g. "Issue 01"
-//   title     — headline
-//   subtitle  — short descriptor shown under the title
-//   excerpt   — preview snippet shown on the card and article header
-//   image     — full URL to the cover image
-//   readTime  — e.g. "4 min read"
-//   quote     — pull quote shown large inside the article page
-//   body      — array of paragraph strings (the full article text)
 const articles = [
   {
-    id: "founders-note",
-    category: "Editorial",
+    id: "does-originality-even-matter",
+    category: "Lead",
     issue: "Issue 01",
-    title: "Who's That Girl? Meet the Co-Founders.",
-    subtitle: "A closer look at the perspective shaping Majul Editorial.",
-    excerpt: "Sample text. This space holds a short article preview that introduces the piece, frames the tone, and gives readers a reason to continue into the full page.",
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80",
-    readTime: "4 min read",
-    quote: "Replace this with a pull quote from the article — one strong sentence that earns its own space.",
+    title: "Does Originality Even Matter Anymore?",
+    subtitle: "Nostalgia, revival culture, and the limits of fashion law.",
+    excerpt: "As 2025 fashion loops back through Y2K, archive revivals, and reboot culture, the real question is no longer whether a look is new, but whether the law can recognize meaning when creativity works through repetition.",
+    image: "LeadArticleImage.png",
+    readTime: "6 min read",
+    quote: "Fashion does not move in a straight line; it loops, mutates, and returns charged with new cultural meaning.",
     body: [
-      "Replace this paragraph with the article's opening. Set the scene, establish the voice, and make the reader want to stay.",
-      "This second paragraph continues the story. Use it for context, detail, or a shift in perspective.",
-      "The third paragraph can deepen the argument or introduce a turn. Keep the tone editorial throughout.",
+      "Plaid, zebra print, mini-bags, thin brows, and Y2K silhouettes are not simply back; they are the dominant visual language of the moment. The lead article argues that 2025 fashion is saturated with revival culture, where desirability comes from recognition rather than rupture.",
+      "That creates a legal problem. Copyright, trade dress, and design protection all assume originality, uniqueness, or novelty. Fashion, by contrast, thrives on reference. Designers pull from archives, old films, subcultures, and past decades, then reassemble those sources into something newly legible for the present.",
+      "The article rejects the myth of pure originality. It treats fashion as a system of recombination, where even the most celebrated innovations emerge from adaptation rather than invention from nothing. Consumers, platforms, and brands already behave as though this is true, while the law continues to pretend otherwise.",
+      "Its conclusion is blunt: fashion law may need to shift away from protecting firstness and toward protecting meaningful reinterpretation. In a culture built on remembrance, significance may matter more than novelty."
     ],
   },
   {
-    id: "fashion-journalism",
+    id: "jurisprudence-of-color-ownership",
+    category: "Trademark",
+    issue: "Issue 01",
+    title: "The Jurisprudence of Color Ownership in Fashion",
+    subtitle: "Trademark law and the boundaries of color protection.",
+    excerpt: "From Hermès orange to Tiffany blue and Louboutin red soles, the article examines how trademark law tries to protect color as brand identity without privatizing the visual commons.",
+    image: "LeadArticleImage.png",
+    readTime: "5 min read",
+    quote: "Trademark law permits chromatic exclusivity only when color functions as source, not when it locks away a basic tool of design.",
+    body: [
+      "Color in fashion carries history, status, and instant recognition. The article opens with iconic examples such as Hermès orange, Tiffany blue, and Louboutin’s red sole to ask whether a company can meaningfully claim ownership over a hue.",
+      "It explains the core legal framework: a color mark must acquire secondary meaning so that consumers link the shade to a single source, and it must survive the functionality doctrine, which blocks trademark protection when exclusivity would unfairly burden competitors.",
+      "Key cases structure the analysis. Qualitex established that a single color can function as a trademark when it identifies source, while Christian Louboutin v. Yves Saint Laurent narrowed protection by treating the contrasting red sole as protectable, but not an all-red shoe.",
+      "The article ends by framing color ownership as a jurisprudential balancing act. Courts protect iconic brand signals, but they do so cautiously in order to preserve creative freedom, competition, and the shared cultural life of color itself."
+    ],
+  },
+  {
+    id: "conservative-aesthetics-runway",
     category: "Culture",
     issue: "Issue 01",
-    title: "The Future of Fashion Journalism",
-    subtitle: "Where digital publishing, identity, and visual culture intersect.",
-    excerpt: "Sample text. Use this section as a concise snippet beneath the headline. It should feel intentional, polished, and editorial without revealing the full article.",
-    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=80",
+    title: "The Rise of Conservative Aesthetics on the Runway",
+    subtitle: "Quiet luxury, respectability, and the politics of restraint.",
+    excerpt: "Longer hemlines, muted palettes, tailoring, and office-core styling are framed not as neutral chic, but as a wider return to discipline, exclusion, and legally enforced standards of professionalism.",
+    image: "LeadArticleImage.png",
     readTime: "6 min read",
-    quote: "Replace this with a pull quote from the article — one strong sentence that earns its own space.",
+    quote: "What appears on the runway as elegance can reappear in the workplace as regulation, conformity, and control.",
     body: [
-      "Replace this paragraph with the article's opening. Set the scene, establish the voice, and make the reader want to stay.",
-      "This second paragraph continues the story. Use it for context, detail, or a shift in perspective.",
-      "The third paragraph can deepen the argument or introduce a turn. Keep the tone editorial throughout.",
+      "This essay traces luxury fashion’s move toward restraint through quiet luxury, old-money styling, and office-coded silhouettes. What looks like aesthetic minimalism is treated as a deeper social preference for order, discipline, and respectability.",
+      "The piece argues that conservative style operates as both rebellion and regression. It rejects algorithmic excess and attention-economy spectacle, yet it also restores classed and gendered signals that historically separated who belonged from who did not.",
+      "The legal dimension sharpens the critique. Workplace dress codes have long functioned as disciplinary tools, often colliding with race, gender, and identity. The article connects runway conservatism to real disputes over professionalism, including discriminatory enforcement and evolving human-rights protections.",
+      "Its final move is to expose the contradiction: luxury houses romanticize refined discipline on the catwalk while the same ideals can restrict expression in workplaces and institutions. The question is not whether restraint is stylish, but who gets policed through it."
     ],
   },
   {
-    id: "runway-context",
+    id: "counterfeit-culture",
+    category: "Enforcement",
+    issue: "Issue 01",
+    title: "The Rise of Counterfeit Culture",
+    subtitle: "Fashion law’s ongoing battle against knockoffs.",
+    excerpt: "Counterfeits now move through global online platforms at industrial scale, forcing fashion law to confront a fast, distributed market where enforcement is reactive, expensive, and often too slow.",
+    image: "LeadArticleImage.png",
+    readTime: "5 min read",
+    quote: "Counterfeiting threatens more than exclusivity; it destabilizes trust, labor standards, and the legal value of authenticity itself.",
+    body: [
+      "The article maps counterfeiting as one of fashion law’s most persistent failures. Fake handbags, copied sneakers, and near-identical luxury replicas circulate through digital marketplaces with a scale and speed that traditional enforcement struggles to match.",
+      "Trademark law remains the main legal weapon, but it is often incomplete. Design protection is uneven across jurisdictions, copyright rarely captures useful apparel, and fast trend cycles mean a case may arrive after the market moment has already passed.",
+      "Platforms such as Instagram, Amazon, and Alibaba become central battlegrounds. Even with takedown systems and seller screening, counterfeit enforcement remains a legal whack-a-mole, especially for smaller designers who lack in-house legal teams and cannot sustain prolonged disputes.",
+      "The article closes by widening the frame. Anti-counterfeit law is not just about brand image. It also intersects with consumer safety, abusive labor, environmental harm, and the broader ethics of how fashion value is produced and falsified."
+    ],
+  },
+  {
+    id: "what-a-devil-wears-now",
     category: "Commentary",
     issue: "Issue 01",
-    title: "Beyond the Runway: Context Matters",
-    subtitle: "Fashion examined through culture, timing, and social response.",
-    excerpt: "Sample text. This preview box can later be replaced with a custom excerpt for each article.",
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1400&q=80",
+    title: "What a Devil Wears Now",
+    subtitle: "Fashion law, power, and ethics in a sequel era.",
+    excerpt: "Using a modern return to The Devil Wears Prada as its frame, the essay examines how workplace law, design protection, AI, and corporate ethics have transformed the legal terrain of fashion since 2006.",
+    image: "LeadArticleImage.png",
     readTime: "5 min read",
-    quote: "Replace this with a pull quote from the article — one strong sentence that earns its own space.",
+    quote: "A fashion empire built on fear and image now has to answer to equity law, AI disputes, and new demands for dignity at work.",
     body: [
-      "Replace this paragraph with the article's opening. Set the scene, establish the voice, and make the reader want to stay.",
-      "This second paragraph continues the story. Use it for context, detail, or a shift in perspective.",
-      "The third paragraph can deepen the argument or introduce a turn. Keep the tone editorial throughout.",
+      "This article revisits The Devil Wears Prada through contemporary fashion law. The old image of glamour-driven authoritarianism is measured against current expectations around labor standards, harassment prevention, pay equity, and non-discriminatory dress codes.",
+      "It argues that a sequel set in the present cannot rely on the old fantasy of unchecked executive power. Today’s fashion workplace sits inside a legal framework that expects investigation procedures, respect for workers, and policies that do not discriminate on gendered or other protected grounds.",
+      "The piece then turns to intellectual property and the persistent vulnerability of fashion design, especially for small creators navigating copyright gaps, registration burdens, and fast-fashion copying. From there it moves into AI-generated design, where authorship, training data, and liability remain unsettled.",
+      "The result is a law-aware cultural critique. A contemporary ‘Devil’ is no longer defined only by taste and control, but by how power operates inside legal systems that now scrutinize workplace conduct, originality claims, and algorithmic creativity."
     ],
   },
   {
-    id: "creative-direction",
-    category: "Fashion",
+    id: "small-signs-big-stakes",
+    category: "Case Study",
     issue: "Issue 01",
-    title: "Creative Direction in the Digital Age",
-    subtitle: "The new visual language of editorial storytelling online.",
-    excerpt: "Sample text. Place a brief preview here so readers understand the tone and subject before opening the full article page.",
-    image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1400&q=80",
-    readTime: "3 min read",
-    quote: "Replace this with a pull quote from the article — one strong sentence that earns its own space.",
-    body: [
-      "Replace this paragraph with the article's opening. Set the scene, establish the voice, and make the reader want to stay.",
-      "This second paragraph continues the story. Use it for context, detail, or a shift in perspective.",
-      "The third paragraph can deepen the argument or introduce a turn. Keep the tone editorial throughout.",
-    ],
-  },
-  {
-    id: "emerging-voices",
-    category: "Profiles",
-    issue: "Issue 02",
-    title: "Emerging Voices, Distinct Points of View",
-    subtitle: "New perspectives from the people shaping visual culture.",
-    excerpt: "Sample text. This is a placeholder snippet inside a structured text box that can later be swapped for real preview copy.",
-    image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=80",
-    readTime: "4 min read",
-    quote: "Replace this with a pull quote from the article — one strong sentence that earns its own space.",
-    body: [
-      "Replace this paragraph with the article's opening. Set the scene, establish the voice, and make the reader want to stay.",
-      "This second paragraph continues the story. Use it for context, detail, or a shift in perspective.",
-      "The third paragraph can deepen the argument or introduce a turn. Keep the tone editorial throughout.",
-    ],
-  },
-  {
-    id: "identity-style",
-    category: "Style",
-    issue: "Issue 02",
-    title: "Style, Identity, and Editorial Presence",
-    subtitle: "How personal image becomes narrative in modern media.",
-    excerpt: "Sample text. Keep this concise and elegant. It acts as a visual snippet that supports the homepage flow without overcrowding the design.",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=80",
+    title: "Small Signs, Big Stakes",
+    subtitle: "A case study of Levi Strauss & Co. v. Brunello Cucinelli USA.",
+    excerpt: "A small fabric tab becomes the center of a major trademark dispute, showing how minimal design details now carry enormous legal force in a logo-averse luxury market.",
+    image: "LeadArticleImage.png",
     readTime: "5 min read",
-    quote: "Replace this with a pull quote from the article — one strong sentence that earns its own space.",
+    quote: "In contemporary fashion branding, the smallest detail can carry the largest proprietary claim.",
     body: [
-      "Replace this paragraph with the article's opening. Set the scene, establish the voice, and make the reader want to stay.",
-      "This second paragraph continues the story. Use it for context, detail, or a shift in perspective.",
-      "The third paragraph can deepen the argument or introduce a turn. Keep the tone editorial throughout.",
+      "This case study centers on Levi Strauss & Co.’s 2024 trademark dispute with Brunello Cucinelli over a pocket tab. The argument is outwardly narrow, but the article treats it as a window into the expanding reach of non-traditional trademarks in fashion.",
+      "Levi’s tab is presented as more than decoration. After decades of consistent use and brand recognition, the company argues that consumers read the size, placement, and rectangular silhouette of the tab itself as a source identifier, even without a visible wordmark.",
+      "The essay links this to a broader market shift. In a quiet-luxury environment, branding has become smaller and subtler, which means minimalist cues now carry more communicative and legal weight. Trademark law is adapting by taking micro-signifiers increasingly seriously.",
+      "But that expansion has costs. Independent designers face a denser and more dangerous design field, where tabs, stitching, placements, and pocket details can trigger claims. The case becomes a study in how brand preservation and creative freedom now collide at the level of the seemingly trivial."
     ],
   },
 ];
@@ -160,6 +151,7 @@ function applyConfig() {
   heroWrap.setAttribute('data-article-id', HERO.heroArticleId);
   heroWrap.onclick = () => openArticle(HERO.heroArticleId);
   heroWrap.querySelector('img').src = HERO.heroImage;
+  heroWrap.querySelector('img').alt = articles.find(a => a.id === HERO.heroArticleId)?.title || 'Lead article';
   heroWrap.querySelector('.hero-image-badge').textContent = HERO.heroBadge;
 
   const featuredArticle = articles.find(a => a.id === FEATURED.featuredId);
@@ -300,3 +292,4 @@ window.addEventListener('popstate', (e) => {
 // ── INIT ─────────────────────────────────────────────────────────
 applyConfig();
 renderCards(articles);
+
