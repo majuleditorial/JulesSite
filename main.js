@@ -17,7 +17,7 @@ const SITE_CONFIG = {
 const HERO = {
   eyebrow: "New Editorial Platform",
   headline: "A polished digital home for <em>fashion,</em> culture, and commentary.",
-  body: "Built for visual storytelling, elegant reading, and scalable magazine publishing. Each story opens into its own article page with a clean preview box and structured layout.",
+  body: "Handcrafted for visual storytelling, engaging reading, and a deeper exploration of fashion beyond surface-level expression",
   heroArticleId: "fashion-journalism",
 heroImage: "./../LeadArticleImage.png",
   heroBadge: "Issue 01 · Featured",
