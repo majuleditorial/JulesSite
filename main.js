@@ -67,7 +67,7 @@ const articles = [
     category: "Culture",
     issue: "Issue 01",
     title: "Does Originality Even Matter Anymore? Nostalgia, Revival Culture, and the Limits of Fashion Law",
-    subtitle: "Where digital publishing, identity, and visual culture intersect.",
+    subtitle: "WHERE NOSTALGIA, LAW, AND ALGORITHMS COLLIDE—FASHION REDEFINES ORIGINALITY",
     excerpt: "Originality in fashion is increasingly less about invention than reinterpretation, as revival culture turns past aesthetics into present currency and exposes the gap between legal definitions of originality and the industry’s recursive creative reality.",
 image: "./../LeadArticleImage.png",
     readTime: "6 min read",
