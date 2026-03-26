@@ -339,6 +339,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 2rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2; /* add this */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
