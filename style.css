@@ -1,3 +1,4 @@
+
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -10,9 +11,12 @@
   --accent: #c9a96e;
   --accent-dark: #a8854a;
   --white: #ffffff;
-  --serif: 'Cormorant Garamond', Georgia, serif;
+--serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'Jost', sans-serif;
+--script: 'Pinyon Script', cursive;
+
   --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 }
 html { scroll-behavior: smooth; }
 body {
@@ -75,21 +79,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
 }
 .monogram-small span:first-child {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.3rem;
+  font-family: var(--script);
+  font-style: normal;
+  font-size: 1.1rem;
   position: absolute;
   top: 6px;
-  left: 6px;
+  left: 8px;
   line-height: 1;
 }
 .monogram-small span:last-child {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.2rem;
+  font-family: var(--script);
+  font-style: normal;
+  font-size: 1.1rem;
   position: absolute;
   bottom: 6px;
-  right: 5px;
+  right: 7px;
   line-height: 1;
 }
 .brand-text-small {
@@ -165,21 +169,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: center;
 }
 .monogram-large span:first-child {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 3rem;
+  font-family: var(--script);
+  font-style: normal;
+  font-size: 2.4rem;
   position: absolute;
-  top: 8px;
-  left: 10px;
+  top: 12px;
+  left: 14px;
   line-height: 1;
 }
 .monogram-large span:last-child {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 2.7rem;
+  font-family: var(--script);
+  font-style: normal;
+  font-size: 2.3rem;
   position: absolute;
-  bottom: 8px;
-  right: 8px;
+  bottom: 12px;
+  right: 12px;
   line-height: 1;
 }
 .logo-name {
@@ -751,18 +755,19 @@ footer {
   font-weight: 300;
   font-style: italic;
 }
-.article-body-block {
-  background: var(--white);
-  border: 1px solid rgba(14,13,11,0.08);
-  border-radius: 2rem;
-  padding: 2.5rem;
-  box-shadow: 0 4px 16px rgba(14,13,11,0.04);
+.article-body-block h2 {
+  font-size: 0.95rem;        /* smaller than before */
+  font-weight: 500;          /* lighter weight */
+  color: #444;               /* less dark */
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.4;
 }
 .article-body-block .label { margin-bottom: 1.5rem; }
 .article-body-block p {
   font-size: 0.9rem;
   line-height: 1.95;
-  color: rgba(14,13,11,0.7);
+  color: rgba(14,13,11,0.82); /* darker than current ~0.7 */
   font-weight: 300;
   margin-bottom: 1.2rem;
 }
