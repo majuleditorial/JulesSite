@@ -27,7 +27,7 @@ heroImage: "./../LeadArticleImage.png",
 // featuredId must match an id in the articles array below.
 const FEATURED = {
   featuredId: "fashion-journalism",
-  sectionDesc: "A professional homepage flow inspired by modern magazine design: image-forward, spacious, and structured to make discovery feel effortless.",
+  sectionDesc: "A platform exploring fashion through cycles of revival, reinterpretation, and cultural memory—where what feels new is often what has been reshaped, and meaning emerges through recognition rather than invention.",
   editorNote: "This is a placeholder for an editor's note or pull quote. It adds a secondary layer of context and editorial voice to the featured article layout.",
 };
 
