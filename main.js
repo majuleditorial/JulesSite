@@ -27,7 +27,7 @@ heroImage: "./../LeadArticleImage.png",
 // featuredId must match an id in the articles array below.
 const FEATURED = {
   featuredId: "fashion-journalism",
-  sectionDesc: "A platform exploring fashion through cycles of revival, reinterpretation, and cultural memory—where what feels new is often what has been reshaped, and meaning emerges through recognition rather than invention.",
+  sectionDesc: " platform exploring fashion through cycles of revival, reinterpretation, and cultural memory—where what feels new is often what has been reshaped, and meaning emerges through recognition rather than invention.",
   editorNote: "This is a placeholder for an editor's note or pull quote. It adds a secondary layer of context and editorial voice to the featured article layout.",
 };
 
@@ -67,7 +67,7 @@ const articles = [
     category: "Culture",
     issue: "Issue 01",
     title: "Does Originality Even Matter Anymore? Nostalgia, Revival Culture, and the Limits of Fashion Law",
-    subtitle: "WHERE NOSTALGIA, LAW, AND ALGORITHMS COLLIDE—FASHION REDEFINES ORIGINALITY",
+    subtitle: "Where digital publishing, identity, and visual culture intersect.",
     excerpt: "Originality in fashion is increasingly less about invention than reinterpretation, as revival culture turns past aesthetics into present currency and exposes the gap between legal definitions of originality and the industry’s recursive creative reality.",
 image: "./../LeadArticleImage.png",
     readTime: "6 min read",
