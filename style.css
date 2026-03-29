@@ -1,3 +1,4 @@
+
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -10,9 +11,12 @@
   --accent: #c9a96e;
   --accent-dark: #a8854a;
   --white: #ffffff;
-  --serif: 'Cormorant Garamond', Georgia, serif;
+--serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'Jost', sans-serif;
+--script: 'Pinyon Script', cursive;
+
   --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 }
 html { scroll-behavior: smooth; }
 body {
@@ -75,21 +79,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
 }
 .monogram-small span:first-child {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.3rem;
+  font-family: var(--script);
+  font-style: normal;
+  font-size: 1.1rem;
   position: absolute;
   top: 6px;
-  left: 6px;
+  left: 8px;
   line-height: 1;
 }
 .monogram-small span:last-child {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.2rem;
+  font-family: var(--script);
+  font-style: normal;
+  font-size: 1.1rem;
   position: absolute;
   bottom: 6px;
-  right: 5px;
+  right: 7px;
   line-height: 1;
 }
 .brand-text-small {
@@ -165,21 +169,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: center;
 }
 .monogram-large span:first-child {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 3rem;
+  font-family: var(--script);
+  font-style: normal;
+  font-size: 2.4rem;
   position: absolute;
-  top: 8px;
-  left: 10px;
+  top: 12px;
+  left: 14px;
   line-height: 1;
 }
 .monogram-large span:last-child {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 2.7rem;
+  font-family: var(--script);
+  font-style: normal;
+  font-size: 2.3rem;
   position: absolute;
-  bottom: 8px;
-  right: 8px;
+  bottom: 12px;
+  right: 12px;
   line-height: 1;
 }
 .logo-name {
@@ -329,17 +333,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .featured-title {
   font-family: var(--serif);
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
-  line-height: 1;
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  line-height: 1.1;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2; /* add this */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .featured-subtitle {
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gray);
-  font-weight: 400;
+  display: none;
 }
 .featured-excerpt {
   background: var(--cream);
@@ -445,7 +450,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 1.6rem 1.8rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.6rem;
   flex: 1;
 }
 .card-meta {
@@ -459,17 +464,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .card-title {
   font-family: var(--serif);
-  font-size: 1.6rem;
-  line-height: 1.05;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  line-height: 1.15;
   font-weight: 300;
+  height: 3rem;
+  display: -webkit-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2; /* add this */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .card-subtitle {
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--gray);
-  font-weight: 400;
-  line-height: 1.5;
+  display: none;
 }
 .card-excerpt {
   background: var(--cream);
@@ -662,8 +669,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr 0.85fr;
   gap: 4rem;
-  align-items: end;
+  align-items: stretch;
   margin-bottom: 4rem;
+}
+.article-hero-grid > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .article-breadcrumb {
   display: flex;
@@ -681,18 +693,13 @@ footer {
 .article-breadcrumb .dot { color: var(--gray-light); }
 .article-main-title {
   font-family: var(--serif);
-  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-size: clamp(2.8rem, 4.2vw, 4.5rem);
   line-height: 0.95;
   font-weight: 300;
   margin-bottom: 1.2rem;
 }
 .article-main-subtitle {
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gray);
-  font-weight: 400;
-  max-width: 480px;
+  display: none;
 }
 .article-preview-box {
   background: var(--black-soft);
@@ -751,18 +758,19 @@ footer {
   font-weight: 300;
   font-style: italic;
 }
-.article-body-block {
-  background: var(--white);
-  border: 1px solid rgba(14,13,11,0.08);
-  border-radius: 2rem;
-  padding: 2.5rem;
-  box-shadow: 0 4px 16px rgba(14,13,11,0.04);
+.article-body-block h2 {
+  font-size: 0.95rem;        /* smaller than before */
+  font-weight: 500;          /* lighter weight */
+  color: #444;               /* less dark */
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.4;
 }
 .article-body-block .label { margin-bottom: 1.5rem; }
 .article-body-block p {
   font-size: 0.9rem;
   line-height: 1.95;
-  color: rgba(14,13,11,0.7);
+  color: rgba(14,13,11,0.82); /* darker than current ~0.7 */
   font-weight: 300;
   margin-bottom: 1.2rem;
 }

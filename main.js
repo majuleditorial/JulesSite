@@ -8,25 +8,44 @@ const SITE_CONFIG = {
   name: "Majul Editorial",
   tagline: "Fashion Beyond The Runway · Culture · Context · Commentary",
   footerTagline: "Fashion beyond the runway.",
+<<<<<<< HEAD
   footerDesc: "A digital editorial platform built for visual storytelling, sharp commentary, and magazine-style publishing focused on fashion law, culture, and criticism.",
+=======
+  footerDesc: "Handcrafted for visual storytelling, engaging reading, and a deeper exploration of fashion beyond surface-level expression.",
+>>>>>>> fc26cc0a5d0ec36553ff50e2249a0a2b3ad9c083
   instagramUrl: "https://instagram.com",
 };
 
 // ── HERO SECTION ─────────────────────────────────────────────────
 const HERO = {
+<<<<<<< HEAD
   eyebrow: "Lead Story",
   headline: "Does <em>originality</em> even matter anymore?",
   body: "This issue leads with a sharp look at nostalgia, revival culture, and the legal fiction of originality in a fashion industry built on recombination, archives, and repetition.",
   heroArticleId: "does-originality-even-matter",
   heroImage: "LeadArticleImage.png",
   heroBadge: "Issue 01 · Lead",
+=======
+  eyebrow: "New Editorial Platform",
+  headline: "A polished digital home for <em>fashion,</em> culture, and commentary.",
+  body: "Handcrafted for visual storytelling, engaging reading, and a deeper exploration of fashion beyond surface-level expression",
+  heroArticleId: "fashion-journalism",
+heroImage: "./../LeadArticleImage.png",
+  heroBadge: "Issue 01 · Featured",
+>>>>>>> fc26cc0a5d0ec36553ff50e2249a0a2b3ad9c083
 };
 
 // ── FEATURED ARTICLE (Lead Story) ────────────────────────────────
 const FEATURED = {
+<<<<<<< HEAD
   featuredId: "does-originality-even-matter",
   sectionDesc: "Six essays examine the fault lines where fashion meets law: originality, trademarks, counterfeits, labor, aesthetics, and brand control.",
   editorNote: "Lead essay: a critique of revival culture and the mismatch between fashion’s recursive creativity and legal doctrines built around novelty.",
+=======
+  featuredId: "fashion-journalism",
+  sectionDesc: " platform exploring fashion through cycles of revival, reinterpretation, and cultural memory—where what feels new is often what has been reshaped, and meaning emerges through recognition rather than invention.",
+  editorNote: "This is a placeholder for an editor's note or pull quote. It adds a secondary layer of context and editorial voice to the featured article layout.",
+>>>>>>> fc26cc0a5d0ec36553ff50e2249a0a2b3ad9c083
 };
 
 // ── ARTICLES ─────────────────────────────────────────────────────
@@ -69,6 +88,7 @@ const articles = [
     id: "conservative-aesthetics-runway",
     category: "Culture",
     issue: "Issue 01",
+<<<<<<< HEAD
     title: "The Rise of Conservative Aesthetics on the Runway",
     subtitle: "Quiet luxury, respectability, and the politics of restraint.",
     excerpt: "Longer hemlines, muted palettes, tailoring, and office-core styling are framed not as neutral chic, but as a wider return to discipline, exclusion, and legally enforced standards of professionalism.",
@@ -81,6 +101,37 @@ const articles = [
       "The legal dimension sharpens the critique. Workplace dress codes have long functioned as disciplinary tools, often colliding with race, gender, and identity. The article connects runway conservatism to real disputes over professionalism, including discriminatory enforcement and evolving human-rights protections.",
       "Its final move is to expose the contradiction: luxury houses romanticize refined discipline on the catwalk while the same ideals can restrict expression in workplaces and institutions. The question is not whether restraint is stylish, but who gets policed through it."
     ],
+=======
+    title: "Does Originality Even Matter Anymore? Nostalgia, Revival Culture, and the Limits of Fashion Law",
+    subtitle: "Where digital publishing, identity, and visual culture intersect.",
+    excerpt: "Originality in fashion is increasingly less about invention than reinterpretation, as revival culture turns past aesthetics into present currency and exposes the gap between legal definitions of originality and the industry’s recursive creative reality.",
+image: "./../LeadArticleImage.png",
+    readTime: "6 min read",
+    quote: "Everything that is new is actually an ingenious reworking of the already present",
+    body: [
+  "Plaid is back. Zebra print is back. Capri pants, thinner eyebrows, Y2K mini-bags, and even a Devil Wears Prada re-sequel are back. The 2025 fashion is a rebranded version of the same deja vu, the same cycle of aesthetic referrals and reminiscences. But as the runways, social feeds, and resale markets are dominated by nostalgia, it reveals a bigger legal and philosophical dilemma: what, in the eyes of the law, is considered originality?",
+  "The article investigates the ways in which intellectual property principles, copyright, trade dress, and design protection find it difficult to survive in the era where newness is merely recontextualized memory (Hogan, 2024). Fashion is cyclical, but the pace and overload of the revival culture raises a more difficult question than ever: whether creativity can be safeguarded when creativity is founded on reproduction",
+  "I. The Legal Problem: Fashion Has a Recycling Habit, the Law Isn’t Built For",
+  "Fashion law encourages originality. Copyright involves original expression. Trade dress requires uniqueness. Design patents have novelty and non-obviousness. However, the fashion world lives by imitation. The trends recur every 20 years; silhouettes are reused with slight modifications, and complete collections are created from archives.",
+  "In 2022, Fendi reused its ruffles from the 2000s. The 2025 Heaven campaign of Marc Jacobs was a direct pull from the film Thirteen. The Y2K resurgence has made low-rise denim and baby tees, which were viewed as outdated, the new bestsellers (Chokrane, 2025). Designers are not rewarded for creating new visual languages, but for reviving old ones and rebranding them with modern styling.",
+  "This does not align with fashion law, which presupposes a sharp distinction between inspiration and imitation. Should a plaid pattern of 1997 be recycled on the runway in 2025, can it be considered original again? In case zebra print comes back after every ten years, who is the one to boast of uniqueness (Sarac, 2025)? Would it be protectable in law when what makes something appealing is that it is recognizable? The answers to the current legal doctrine do not align well with the creative reality of the industry.",
+  "II. The Myth of Originality: Why Fashion Is Built on Recombination",
+  "We pretend originality is a sacred currency, an individual genius moment, lightning pulled from the void. But that myth collapses under scrutiny. Shakespeare borrowed plots. Picasso borrowed aesthetics. Steve Jobs borrowed Xerox’s interface. TikTok culture is built on remixes of remixes.",
+  "Everything that is new is actually an ingenious reworking of the already present.",
+  "This is more so when it comes to fashion. Designers do not create out of nothing; they draw upon archives, films, subcultures, world references, and previous decades. Even the most celebrated of the original fashion events, such as bumsters by McQueen, deconstruction by Margiela, and historical couture by Galliano, were all based on recombination (Chawla, 2025).",
+  "The industry knows this. Consumers know this. The law only feigns the opposite.",
+  "IIII. The Revival Culture: The Surge - Why the 2020s Are More Referential Than Ever.",
+  "The 2020s are more referential than ever, shaped by a cultural landscape where Hollywood’s business model depends on constantly recycling IP, and every week brings a reboot, remake, or prequel. Fashion is a direct reflection of this atmosphere, drawing inspiration from movies, catwalks, and celebrity images that collectively form a shared visual memory. Platforms now reward instant recognition; the faster something is read and referenced, the faster it spreads, making nostalgic aesthetics powerful precisely because they are legible at a glance. In an economy where creativity feels risky and nostalgia feels safe, reissued handbags and revived collections succeed because they come with built-in emotional appeal, often overriding the limited legal protections around them. Algorithms further amplify what resembles past successes, revising a default rather than a deviation from it. The result is a fashion environment in which the new is, in truth, what we have simply remembered.",
+  "IV. The Law Tension: When It All Becomes a Reference, What?",
+  "When a microbrand puts up a Y2K-inspired zebra mini-skirt, does it infringe on a print created in the 1990s? By doing the Baguette the fifth time, will it be a revival or a legal move of trying to revive the individuality (Chawla, 2025)? The legislation assumes linear creative development; fashion is recursive. It loops, mutates, and revives. The same silhouette of 2001 may be new again in 2025, just because culture has changed around it. However, judicial bodies find it difficult to deal with designs whose market value is based on being familiar, even anticipated.",
+  "V. Does Originality Even Sell? Probably Not--But Meaning Does.",
+  "Cultural exhaustion of nostalgia. Gen Z is making a growing joke that our generation has no aesthetic since there is nothing but a reference. But viewers prefer the already known. It is emotionally safe, economically predictable and algorithmically enhanced. Consumers do not desire originality, but they desire recognition in the form of innovation.",
+  "Legally, this crowds out even the very works of which copyright doctrine is supposed to protect: daring, innovative designs. Nonetheless, the word unprecedented hardly became viral.",
+  "\"Newness\" in the conventional sense is not necessary for fashion. It requires creativity, the capacity to reassemble, reinterpret, and revitalize in ways that are relevant today. However, the legal system still upholds a definition of originality that is out of step with how artists operate and how culture is consumed.",
+  "Whether fashion law can transition from safeguarding originality to safeguarding significant reinterpretation will determine its future, as the objective is to perceive differently rather than to be first in a world based on references.",
+  "And genuine creativity resides there."
+],
+>>>>>>> fc26cc0a5d0ec36553ff50e2249a0a2b3ad9c083
   },
   {
     id: "counterfeit-culture",
@@ -248,11 +299,15 @@ function openArticle(id) {
   document.querySelector('.article-quote-block blockquote').textContent = article.quote || '';
 
   const bodyBlock = document.querySelector('.article-body-block');
-  bodyBlock.querySelectorAll('p').forEach(p => p.remove());
-  (article.body || []).forEach(para => {
-    const p = document.createElement('p');
-    p.textContent = para;
-    bodyBlock.appendChild(p);
+
+  bodyBlock.querySelectorAll('p:not(.label), h2').forEach(el => el.remove());
+
+  const subtitlePattern = /^(I|II|III|IIII|IV|V|VI|VII|VIII|IX|X)\.\s/;
+
+  (article.body || []).forEach(item => {
+    const el = document.createElement(subtitlePattern.test(item) ? 'h2' : 'p');
+    el.textContent = item;
+    bodyBlock.appendChild(el);
   });
 
   const related = articles.filter(a => a.id !== id).slice(0, 3);
