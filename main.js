@@ -9,7 +9,7 @@ const SITE_CONFIG = {
   tagline: "Fashion Beyond The Runway · Culture · Context · Commentary",
   footerTagline: "Fashion beyond the runway.",
   footerDesc: "Handcrafted for visual storytelling, engaging reading, and a deeper exploration of fashion beyond surface-level expression.",
-  instagramUrl: "https://instagram.com",
+  instagramUrl: "https://www.instagram.com/majuleditorial/",
 };
 
 // ── HERO SECTION ─────────────────────────────────────────────────
@@ -27,7 +27,7 @@ const HERO = {
 // featuredId must match an id in the articles array below.
 const FEATURED = {
   featuredId: "fashion-journalism",
-  sectionDesc: "An industry built on repetition now confronts a system built on originality fashion thrives by reviving the past, while the law struggles to define who, if anyone, can claim it.",
+  sectionDesc: " An industry built on repetition now confronts a system built on originality fashion thrives by reviving the past, while the law struggles to define who, if anyone, can claim it.",
   editorNote: "What we call new is often only remembered differently and in that recognition, fashion finds its power while the law loses its footing.",
 };
 
@@ -52,7 +52,7 @@ const articles = [
     category: "Culture",
     issue: "Issue 06",
     title: "Does Originality Even Matter Anymore? Nostalgia, Revival Culture, and the Limits of Fashion Law",
-    subtitle: "Where digital publishing, identity, and visual culture intersect.",
+    subtitle: "By: Mahek Dharamsi | Date: 3/29/2026", //this is where autor and date go
     excerpt: "Originality in fashion is increasingly less about invention than reinterpretation, as revival culture turns past aesthetics into present currency and exposes the gap between legal definitions of originality and the industry’s recursive creative reality.",
     image: "Issue06Image.png",
     readTime: "6 min read",
@@ -87,7 +87,7 @@ const articles = [
     category: "Culture",
     issue: "Issue 05",
     title: "The Rise of Conservative Aesthetics on the Runway",
-    subtitle: "A closer look at the perspective shaping Majul Editorial.",
+    subtitle: "By: Mahek Dharamsi | Date: 3/29/2026", //this is where areticle author and date goes
     excerpt: "As luxury fashion turns toward restraint and “respectability,” the runway becomes more than an aesthetic space, it becomes a site of power. This piece examines how the rise of quiet luxury and conservative silhouettes reflects deeper cultural shifts, revealing how fashion not only mirrors social hierarchies but actively reinforces them through ideals of discipline, professionalism, and belonging.",
     image: "Issue05Image.png",
     readTime: "6 min read",
@@ -139,7 +139,7 @@ const articles = [
     category: "trend analysis",
     issue: "Issue 04",
     title: "The Rise of Counterfeit Culture: Fashion Law’s Ongoing Battle Against Knockoffs",
-    subtitle: "Fashion examined through culture, timing, and social response.",
+    subtitle: "By: Mahek Dharamsi | Date: 3/29/2026", //this is where author and date goes
     excerpt: "As counterfeit fashion floods digital marketplaces, the law struggles to keep pace with an industry built on speed, imitation, and global circulation. This piece explores how fashion law operates at the intersection of creativity and control, revealing the limits of intellectual property in protecting design, the growing responsibility of online platforms, and the ethical stakes behind what we wear.",
     image: "Issue04Image.png",
     readTime: "5 min read",
@@ -167,7 +167,7 @@ const articles = [
     category: "Ethical",
     issue: "Issue 03",
     title: "What a Devil Wears Now: Fashion Law, Power, and Ethics in a Sequel Era",
-    subtitle: "The new visual language of editorial storytelling online.",
+    subtitle: "By: Mahek Dharamsi | Date: 3/29/2026", //this is where author and date goes
     excerpt: "Released in 2006, The Devil Wears Prada depicted the fashion industry as a glamorous yet unforgiving environment defined by strict, image-focused authority. Nearly twenty years later, legal, social, and technological shifts have transformed the landscape.",
     image: "Issue03Image.png",
     readTime: "3 min read",
@@ -199,7 +199,7 @@ const articles = [
     category: "Emotion",
     issue: "Issue 02",
     title: "Fashion as Emotional Diplomacy: How Wardrobes Convey Empathy and Accessibility on the World Stage",
-    subtitle: "New perspectives from the people shaping visual culture.",
+    subtitle: "By: Mahek Dharamsi | Date: 3/29/2026", //this is where author and date goes
     excerpt: "What we wear does more than just reflect style, it communicates. This piece explores fashion as emotional diplomacy, where clothing shapes perception, signals empathy, and connects people beyond language. From iconic figures to modern leaders, style becomes a quiet but powerful form of influence.",
     image: "Issue02Image.png",
     readTime: "4 min read",
@@ -229,7 +229,7 @@ const articles = [
     category: "Fashion",
     issue: "Issue 01",
     title: "The Jurisprudence of Color Ownership in Fashion, Trademark Law, and the Boundaries of Color Protection.",
-    subtitle: "How personal image becomes narrative in modern media.",
+    subtitle: "By: Mahek Dharamsi | Date: 3/29/2026", //this is where author and date goes
     excerpt: "From Hermès orange to Tiffany & Co. blue and Christian Louboutin red soles, color in fashion operates as both identity and power. This piece explores how trademark law attempts to regulate that power, balancing brand ownership with creative freedom, while asking a deeper question: can something as culturally embedded as color ever truly belong to one entity?",
     image: "Issue01Image.png",
     readTime: "7 min read",
@@ -306,8 +306,7 @@ function applyConfig() {
     fc.onclick = () => openArticle(FEATURED.featuredId);
     fc.querySelector('.featured-image-wrap img').src = featuredArticle.image;
     fc.querySelector('.featured-image-wrap img').alt = featuredArticle.title;
-    fc.querySelector('.featured-cat-badge').textContent = featuredArticle.category;
-    fc.querySelector('.featured-meta').innerHTML = `<span class="label">${featuredArticle.issue}</span><span class="label">${featuredArticle.readTime}</span>`;
+    fc.querySelector('.featured-meta').innerHTML =`<span class="label">${featuredArticle.issue}</span><span class="label">${featuredArticle.readTime}</span>`;
     fc.querySelector('.featured-title').textContent = featuredArticle.title;
     fc.querySelector('.featured-subtitle').textContent = featuredArticle.subtitle;
     fc.querySelector('#featured-excerpt-text').textContent = featuredArticle.excerpt;
@@ -342,6 +341,8 @@ function renderCards(list) {
           <span>${a.readTime}</span>
         </div>
         <h3 class="card-title">${a.title}</h3>
+        <h3 class="card-title">${a.title}</h3>
+        <p class="card-subtitle">${a.subtitle}</p>
         <p class="card-subtitle">${a.subtitle}</p>
         <div class="card-excerpt">${a.excerpt}</div>
         <span class="card-read-btn">
