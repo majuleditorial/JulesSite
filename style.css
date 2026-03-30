@@ -344,12 +344,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
 }
 .featured-subtitle {
-  display: block;
-  font-size: 0.9rem;
-  line-height: 1.7;
-  color: var(--gray);
-  font-weight: 300;
-  margin-bottom: 1rem;
+  display: none;
 }
 .featured-excerpt {
   background: var(--cream);
@@ -480,15 +475,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
 .card-subtitle {
-  display: block;
-  font-size: 0.78rem;
-  line-height: 1.6;
-  color: var(--gray);
-  font-weight: 300;
+  display: none;
 }
-
 .card-excerpt {
   background: var(--cream);
   border: 1px solid rgba(14,13,11,0.07);
@@ -710,11 +699,7 @@ footer {
   margin-bottom: 1.2rem;
 }
 .article-main-subtitle {
-  display: block;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: var(--gray);
-  margin-bottom: 1.5rem;
+  display: none;
 }
 .article-preview-box {
   background: var(--black-soft);
